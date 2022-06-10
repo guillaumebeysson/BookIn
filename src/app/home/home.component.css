@@ -1,0 +1,301 @@
+/* article présentation*/
+#HomePresentation{
+    height: 93vh;
+}
+#sectionLeft{
+    width: 50vw; 
+}
+#blocLeft{
+    width: 300px;
+    font-family: 'Quicksand', sans-serif;
+}
+#blocLeft #logoHomePage{
+    display: block;
+    margin: auto;
+}
+#sectionRight{
+    width: 50vw;
+    padding: 40px;
+    background-color: #e5e5e5;
+}
+#blocImgSectionRight{
+    background-image: url(../../assets/images/imgRightHome.jpg);
+    background-color: #d9d9d9;
+    background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	text-align: center;
+    height: 100%;
+}
+
+/* Article meilleures ventes */
+h2{
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.blackLine{
+    display: block;
+    border: solid 1px black;
+    width: 250px;
+    margin: 0 auto;
+
+}
+.AllCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.Card{
+    font-size: small;
+    position: relative;
+    width: 300px;
+    height: 500px;
+    transform-style: preserve-3d;
+    margin: 50px 100px;
+    transition: 1s;
+}
+.Card .cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+    transform-origin: left;
+}
+.Card .cover img{
+    height: 100%;
+    width: 100%;
+}
+.Card:hover{
+    transform: perspective(2000px) translate(50%);
+    background: #1a1a1a;
+}
+.Card:hover .cover{
+    transform: rotateY(-180deg);
+    background: #1a1a1a;
+
+}
+.Card .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    z-index: 1;
+}
+.Card .detailsList{
+    text-align: center;
+}
+.Card .details a{
+    display: inline-block;
+    padding: 8px 20px;
+    background: #fff;
+    color: black;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.Card h3{
+    font-size: medium;
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    
+}
+.Card h4{
+    
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    
+}
+.Card .details img{
+    height: 297px;
+    width: 210px;
+}
+
+/* Article Team */
+#team{
+    min-height: 50vh;
+    padding-bottom: 40px;
+}
+.AllCardCharacter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cardCharacter{
+    position: relative;
+    width: 350px;
+    height: 190px;
+    /* height: 450px; */
+    background-color: #e5e5e5;
+    transition: 0.5s;
+    
+}
+.cardCharacter:hover{
+    height: 450px;
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.cardCharacter:hover .imgBx{
+    width: 250px;
+    height: 250px;
+    
+}
+
+.imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardCharacter .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+.cardCharacter .content .details{
+    padding: 40px; 
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+}
+.cardCharacter:hover .content .details{
+    transform: translateY(0px);
+}
+.cardCharacter .content .details h5{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em;
+    padding-bottom: 10px;
+}
+.cardCharacter .content .details h5 span{
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+} 
+.cardCharacter .content .details .data{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.cardCharacter .content .details .data h6{
+    font-size: 1em;
+    color: #555;
+    line-height: 1.2em;
+    font-weight: 600;
+}
+.cardCharacter .content .details .data h6 span{
+    font-size: 0.85em;
+    font-weight: 400;
+    opacity: 0.5;
+}
+.cardCharacter .content .details .actionBtn button{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 500;
+    background-color: #1a1a1a;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    #HomePresentation{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    #sectionLeft{
+        width: auto; 
+        height: 100vh;
+        text-align: center;
+    }
+    #sectionRight{
+        height: 100vh;
+        width: auto;
+        padding: 40px;
+        background-color: #e5e5e5;
+    }
+    #blocLeft{
+        width: 280px;
+    }
+    #blocLeft #logoHomePage{
+        width: 280px;
+    }
+    .Card{
+        background-color: #1a1a1a;
+        margin: 50px auto;
+    }
+    .Card .cover{
+        display: none;
+    }
+    .Card:hover{
+        background-color: none;
+        transform: none;
+        background: none;
+    }
+    .cardCharacter{
+        height: 350px;
+    }
+    .cardCharacter .content .details{
+        transform: translateY(0px);
+    }
+    .cardCharacter:hover .imgBx{
+        width: 150px;
+        height: 150px;
+        border-radius: 0;
+    }
+    .cardCharacter .content .details{
+        padding: 0px 0px 40px 0px;
+       
+    }
+    .cardCharacter:hover{
+        height: 350px;
+        border-radius: 0;
+    }
+    .cardCharacter:hover button{
+        border-radius: 0;
+    }
+
+}
+
