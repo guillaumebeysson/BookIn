@@ -235,6 +235,7 @@ h2{
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.5s;
+    border-radius: 25px;
 }
 
 
@@ -283,7 +284,6 @@ h2{
     .cardCharacter:hover .imgBx{
         width: 150px;
         height: 150px;
-        border-radius: 0;
     }
     .cardCharacter .content .details{
         padding: 0px 0px 40px 0px;
@@ -291,10 +291,6 @@ h2{
     }
     .cardCharacter:hover{
         height: 350px;
-        border-radius: 0;
-    }
-    .cardCharacter:hover button{
-        border-radius: 0;
     }
 
 }
