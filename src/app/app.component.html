@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" id="titleBar" routerLink=""><img id="logoNavBar" src="../assets/images/logoAndText.png" alt=""></a>
+    <a class="navbar-brand" href="#" id="titleBar" routerLink=""><img id="logoNavBar"
+        src="../assets/images/logoAndText.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -8,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link ">Home</a>
+          <a class="nav-link " routerLink="">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ">Livres</a>
+          <a class="nav-link " routerLink="/livres">Livres</a>
         </li>
         <li class="nav-item">
           <a class="nav-link ">Contact</a>
@@ -36,7 +37,7 @@
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-dark" type="submit">Search</button>
+        <button class="btn btn-outline-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
   </div>
@@ -49,9 +50,7 @@
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     <!-- Left -->
     <div class="me-5 d-none d-lg-block">
       <span>Restez connecté avec nos réseaux sociaux:</span>
@@ -172,4 +171,3 @@
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
-

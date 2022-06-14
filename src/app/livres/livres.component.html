@@ -1,0 +1,24 @@
+<Article class="container">
+  <h2 class="my-5">Livres</h2>
+
+
+  <div class="AllCard">
+    <div class="Card" *ngFor="let l of livres">
+      <div class="imageLivre">
+        <img src="{{l.image}}" alt="">
+      </div>
+      <div class="textAndBtn">
+        <ul class="CardText">
+          <li class="title">{{l.titre}}</li>
+          <span></span>
+          <li class="auteur"><i class="fa-solid fa-pen-fancy"></i> {{l.auteur}}</li>
+          <li class="genre"><i class="fa-solid fa-book-bookmark"></i> {{l.genre}}</li>
+          <li class="prix">{{l.prix}} €</li>
+        </ul>
+        <div class="buttons">
+          <button class="btn btn-danger" (click)="deleteLivre(l._id)"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</Article>

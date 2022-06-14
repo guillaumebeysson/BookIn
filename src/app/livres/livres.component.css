@@ -1,0 +1,82 @@
+h2{
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+    text-align: center;
+}
+.AllCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.AllCard .Card{
+    background-color: #fafafa;
+    width: 210px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 1em rgb(189, 189, 189);
+    
+}
+.AllCard .Card .textAndBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.AllCard .Card .CardText{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.AllCard .Card .imageLivre{
+    
+}
+.AllCard .Card .imageLivre img{
+    width: 100%;
+    height: 297px;
+    transition: all 0.1s ease-in-out;
+}
+.AllCard .Card:hover .imageLivre img{
+    margin-top: -10px;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-bottom: 0px;
+    width: 110%;
+    height: 307px;
+}
+.AllCard .CardText .title{
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 2px;
+    font-size: large;
+    margin-top: 5px;
+    min-height: 80px;
+}
+.AllCard .CardText span{
+    display: block;
+    width: 50%;
+    border-top: 1px solid black;
+    margin: 5px auto;
+}
+.AllCard .CardText .auteur{
+    
+}
+.AllCard .CardText .genre{
+    
+}
+.AllCard .CardText .prix{
+    font-size: x-large;
+    margin-top: 5px;
+    background-color: rgb(171, 171, 171);
+    color: #fafafa;
+}
+.AllCard .Card .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 10px;
+}
