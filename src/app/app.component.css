@@ -10,3 +10,9 @@
     cursor: pointer;
     font-size: large;    
 }
+.form-control{
+    border-radius: 0;
+}
+.btn{
+    border-radius: 0;
+}
