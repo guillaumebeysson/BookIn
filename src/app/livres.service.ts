@@ -5,20 +5,20 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class LivresService {
-
+url = "https://book-in.herokuapp.com"
   constructor(private http : HttpClient) { }
 
   getlivres(){
-    return this.http.get(`http://localhost:8080/livres`);
+    return this.http.get(`${this.url}/livres`);
   }
   deletelivre(id: any){
-    return this.http.delete(`http://localhost:8080/livres/${id}`);
+    return this.http.delete(`${this.url}/livres/${id}`);
   }
   saveLivre(livre:any){
-    return this.http.post("http://localhost:8080/livres/", livre)
+    return this.http.post(`${this.url}/livres/`, livre)
   }
   update(livre:any,){
-    return this.http.patch("http://localhost:8080/livres/" + livre._id , livre)
+    return this.http.patch(`${this.url}/livres/` + livre._id , livre)
   }
   
 }
