@@ -1,0 +1,15 @@
+.contact{
+    height: 92vh;
+    background-image: url(../../assets/images/contactBackground.webp);
+    background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.contact .formContact{
+    background-color: #fafafa;
+    position: relative;
+    top: 20%;
+    padding: 20px;
+    background-color: #fafafadb;
+}

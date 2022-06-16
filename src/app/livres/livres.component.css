@@ -53,6 +53,8 @@ h2{
     display: table;
     width: 100%;
     text-align: center;
+    margin-top: 5px;
+
 }
 .AllCard .CardText .title{
     text-transform: uppercase;
@@ -62,7 +64,6 @@ h2{
     margin-top: 5px;
     display: table-cell;
     vertical-align: middle;
-    
 }
 .AllCard .CardText span{
     display: block;
@@ -94,4 +95,10 @@ h2{
 .btn-add-livre:hover{
     color: #fafafa;
     background-color: black;
+}
+
+@media only screen and (max-width: 300px) {
+    .AllCard .Card{
+        margin: 30px 0 !important;
+    }
 }

@@ -11,6 +11,7 @@ import { LivresService } from './livres.service';
 import { LivresComponent } from './livres/livres.component';
 import { AddbookComponent } from './addbook/addbook.component';
 import { FormsModule } from '@angular/forms';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     LivresComponent,
     AddbookComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
